@@ -11,7 +11,7 @@ type Props = {
   resetCounter: any
 }
 
-const Header = (props: any) => {
+const Header = (props: Props) => {
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
