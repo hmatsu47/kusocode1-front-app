@@ -63,7 +63,6 @@ function App() {
   // 初期画面の写真リストを取得
   useEffect(() => {
     fetchItems();
-    // eslint-disable-next-line
   }, [setItemList])
   // ロード前は描画しない  
   if (isLoading) {
