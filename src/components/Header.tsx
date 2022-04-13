@@ -7,8 +7,8 @@ import IconButton from '@mui/material/IconButton';
 import RefreshIcon from '@mui/icons-material/Refresh';
 
 type Props = {
-  fetchItems: any,
-  resetCounter: any
+  fetchItems: () => void,
+  resetCounter: () => void
 }
 
 const Header = (props: Props) => {
@@ -23,13 +23,12 @@ const Header = (props: Props) => {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2 }}
+              onClick={() => {
+                props.fetchItems();
+              }}
             >
-              <RefreshIcon
-                onClick={() => {
-                  props.fetchItems();
-                }}
-              />
-          </IconButton>
+              <RefreshIcon />
+            </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Pictures
             </Typography>

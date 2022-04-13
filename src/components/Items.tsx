@@ -11,7 +11,7 @@ import { ItemApi } from '../types/api';
 
 type Props = {
   itemList: ItemApi[],
-  downloadImage: any
+  downloadImage: (pictureId: number) => void
 }
 
 const Items = (props: Props) => {
