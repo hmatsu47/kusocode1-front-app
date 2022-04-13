@@ -7,8 +7,8 @@ import IconButton from '@mui/material/IconButton';
 import RefreshIcon from '@mui/icons-material/Refresh';
 
 type Props = {
-  fetchItems: any,
-  resetCounter: any
+  fetchItems: () => void,
+  resetCounter: () => void
 }
 
 const Header = (props: Props) => {
