@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { getApiData, postApiData } from './utils/apiHandler';
 import { downloadBase64File } from './utils/download';
